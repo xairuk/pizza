@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Kl7-K9-LeG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pizzaGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el tamaño de tu pizza..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77s-8m-K1p">
+                                <rect key="frame" x="0.0" y="96" width="320" height="78"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salatzary Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRo-ou-ZjP">
+                                <rect key="frame" x="0.0" y="64" width="320" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="BVk-BL-89m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIv-5a-UnD">
+                                <rect key="frame" x="95" y="370" width="130" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Grande">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RGE-eY-pXW" kind="push" id="kty-7f-oa1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXI-Fu-rcG">
+                                <rect key="frame" x="109" y="205" width="103" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bYF-Ay-AqT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Chica">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RGE-eY-pXW" kind="push" id="SL6-FV-6Yh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Av-S2-yOd">
+                                <rect key="frame" x="95" y="274" width="130" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Mediana">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RGE-eY-pXW" kind="push" id="bCx-d0-kuD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pXI-Fu-rcG" firstAttribute="centerX" secondItem="77s-8m-K1p" secondAttribute="centerX" id="21J-w9-dFT"/>
+                            <constraint firstAttribute="trailing" secondItem="77s-8m-K1p" secondAttribute="trailing" id="2mg-fV-Dr5"/>
+                            <constraint firstItem="5Av-S2-yOd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="79" id="7rW-8G-4tQ"/>
+                            <constraint firstItem="77s-8m-K1p" firstAttribute="trailing" secondItem="XRo-ou-ZjP" secondAttribute="trailing" id="BkF-ra-TtC"/>
+                            <constraint firstItem="aIv-5a-UnD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="101" id="IHP-rp-JsI"/>
+                            <constraint firstItem="5Av-S2-yOd" firstAttribute="top" secondItem="pXI-Fu-rcG" secondAttribute="bottom" constant="39" id="KCx-Du-yr0"/>
+                            <constraint firstItem="5Av-S2-yOd" firstAttribute="leading" secondItem="aIv-5a-UnD" secondAttribute="leading" id="Pdp-1t-ZjB"/>
+                            <constraint firstItem="77s-8m-K1p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="SL0-hu-l5l"/>
+                            <constraint firstItem="XRo-ou-ZjP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SpR-Fa-qP9"/>
+                            <constraint firstItem="pXI-Fu-rcG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="93" id="UIe-rX-pGp"/>
+                            <constraint firstItem="pXI-Fu-rcG" firstAttribute="centerX" secondItem="5Av-S2-yOd" secondAttribute="centerX" id="UJG-pK-gfO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aIv-5a-UnD" secondAttribute="bottom" constant="168" id="W8q-u0-SOq"/>
+                            <constraint firstItem="77s-8m-K1p" firstAttribute="leading" secondItem="XRo-ou-ZjP" secondAttribute="leading" id="clI-yu-Ifn"/>
+                            <constraint firstItem="aIv-5a-UnD" firstAttribute="trailing" secondItem="5Av-S2-yOd" secondAttribute="trailing" id="evS-8R-QLS"/>
+                            <constraint firstItem="pXI-Fu-rcG" firstAttribute="top" secondItem="77s-8m-K1p" secondAttribute="bottom" constant="31" id="hRy-Vo-Lrj"/>
+                            <constraint firstItem="pXI-Fu-rcG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-64" id="jsM-l0-gl2"/>
+                            <constraint firstItem="77s-8m-K1p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tra-j7-Yvh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="URh-Bu-fF8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="298"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wSO-15-8BG">
+            <objects>
+                <viewController id="RGE-eY-pXW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nlo-cR-9p4"/>
+                        <viewControllerLayoutGuide type="bottom" id="354-Tl-Hpb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yuj-EX-taR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Salatzary Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DH-kl-Yw8">
+                                <rect key="frame" x="0.0" y="64" width="320" height="41"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selecciona el tipo de masa..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWh-JJ-Txj">
+                                <rect key="frame" x="0.0" y="95" width="320" height="78"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNJ-xI-QF6">
+                                <rect key="frame" x="85" y="273" width="150" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Crujiente">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiO-vp-Zdg">
+                                <rect key="frame" x="95" y="357" width="130" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Gruesa">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Lou-0I-SMe" kind="push" id="map-rC-Ney"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYs-oi-VgL">
+                                <rect key="frame" x="100" y="192" width="114" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Delgada">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Lou-0I-SMe" kind="push" id="zRg-bu-oIa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JX-ZI-fpL">
+                                <rect key="frame" x="85" y="273" width="150" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Crujiente">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Lou-0I-SMe" kind="push" id="GC0-bk-CR1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gYs-oi-VgL" firstAttribute="height" secondItem="7JX-ZI-fpL" secondAttribute="height" id="14P-rs-kgq"/>
+                            <constraint firstItem="QNJ-xI-QF6" firstAttribute="leading" secondItem="7JX-ZI-fpL" secondAttribute="leading" id="2j3-bq-ksk"/>
+                            <constraint firstItem="7JX-ZI-fpL" firstAttribute="top" secondItem="gYs-oi-VgL" secondAttribute="bottom" constant="28" id="Cyv-nN-RWJ"/>
+                            <constraint firstItem="gYs-oi-VgL" firstAttribute="leading" secondItem="yuj-EX-taR" secondAttribute="leadingMargin" constant="80" id="Gs5-Pj-mkS"/>
+                            <constraint firstItem="gYs-oi-VgL" firstAttribute="leading" secondItem="yuj-EX-taR" secondAttribute="leadingMargin" constant="80" id="IXK-RU-MnJ"/>
+                            <constraint firstItem="QNJ-xI-QF6" firstAttribute="leading" secondItem="yuj-EX-taR" secondAttribute="leadingMargin" constant="69" id="Jly-32-Eje"/>
+                            <constraint firstAttribute="trailing" secondItem="0DH-kl-Yw8" secondAttribute="trailing" id="MI8-55-kqE"/>
+                            <constraint firstItem="0DH-kl-Yw8" firstAttribute="top" secondItem="nlo-cR-9p4" secondAttribute="bottom" id="RRH-fk-rQK"/>
+                            <constraint firstItem="iWh-JJ-Txj" firstAttribute="leading" secondItem="yuj-EX-taR" secondAttribute="leading" id="VIB-l8-CRV"/>
+                            <constraint firstItem="iiO-vp-Zdg" firstAttribute="centerY" secondItem="yuj-EX-taR" secondAttribute="centerY" constant="99.5" id="XEt-PS-ANh"/>
+                            <constraint firstItem="0DH-kl-Yw8" firstAttribute="trailing" secondItem="iWh-JJ-Txj" secondAttribute="trailing" id="XQE-4s-HII"/>
+                            <constraint firstItem="gYs-oi-VgL" firstAttribute="top" secondItem="nlo-cR-9p4" secondAttribute="bottom" constant="128" id="XdF-Qg-gPH"/>
+                            <constraint firstItem="iWh-JJ-Txj" firstAttribute="top" secondItem="nlo-cR-9p4" secondAttribute="bottom" constant="31" id="c3G-Nf-fje"/>
+                            <constraint firstItem="7JX-ZI-fpL" firstAttribute="trailing" secondItem="QNJ-xI-QF6" secondAttribute="trailing" id="d1O-zm-BO5"/>
+                            <constraint firstItem="iWh-JJ-Txj" firstAttribute="leading" secondItem="0DH-kl-Yw8" secondAttribute="leading" id="h1d-2J-XyV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gYs-oi-VgL" secondAttribute="trailing" constant="86" id="hSL-CC-Qzt"/>
+                            <constraint firstItem="gYs-oi-VgL" firstAttribute="centerX" secondItem="yuj-EX-taR" secondAttribute="centerX" constant="-3" id="k67-g4-3yd"/>
+                            <constraint firstItem="7JX-ZI-fpL" firstAttribute="centerX" secondItem="iWh-JJ-Txj" secondAttribute="centerX" id="kYC-vc-soF"/>
+                            <constraint firstItem="iiO-vp-Zdg" firstAttribute="leading" secondItem="yuj-EX-taR" secondAttribute="leadingMargin" constant="79" id="mVE-pk-e6z"/>
+                            <constraint firstItem="7JX-ZI-fpL" firstAttribute="baseline" secondItem="QNJ-xI-QF6" secondAttribute="baseline" id="nZw-OT-XP8"/>
+                            <constraint firstItem="7JX-ZI-fpL" firstAttribute="centerY" secondItem="yuj-EX-taR" secondAttribute="centerY" constant="15.5" id="nh2-Kb-Arx"/>
+                            <constraint firstItem="7JX-ZI-fpL" firstAttribute="centerX" secondItem="iiO-vp-Zdg" secondAttribute="centerX" id="xTc-BO-G8g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IqK-AQ-1cd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6PH-cV-4x5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="1014"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="meo-t5-I1D">
+            <objects>
+                <viewController id="Lou-0I-SMe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="69n-3G-wXd"/>
+                        <viewControllerLayoutGuide type="bottom" id="g7v-Du-mcr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sum-AP-NAo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Salatzary Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="021-Rq-OwA">
+                                <rect key="frame" x="1" y="64" width="320" height="41"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selecciona el tipo de queso..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwW-JC-Prp">
+                                <rect key="frame" x="1" y="98" width="320" height="78"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Au7-0D-vHl">
+                                <rect key="frame" x="89" y="250" width="142" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Cheddar">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ly9-Rv-MPd">
+                                <rect key="frame" x="86" y="316" width="149" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Parmesano">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O9-Df-0bs">
+                                <rect key="frame" x="95" y="184" width="129" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Mozarella">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxk-NB-pCc">
+                                <rect key="frame" x="94" y="387" width="132" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Sin queso">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SY1-fk-LtA" kind="push" id="KZf-LO-WVP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yoh-3j-Piz">
+                                <rect key="frame" x="181" y="463" width="119" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Siguente">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SY1-fk-LtA" kind="push" id="SXb-FN-5df"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DwW-JC-Prp" firstAttribute="centerX" secondItem="Ly9-Rv-MPd" secondAttribute="centerX" id="0cx-g3-ZlW"/>
+                            <constraint firstItem="021-Rq-OwA" firstAttribute="trailing" secondItem="DwW-JC-Prp" secondAttribute="trailing" id="36J-p6-0JO"/>
+                            <constraint firstItem="DwW-JC-Prp" firstAttribute="top" secondItem="69n-3G-wXd" secondAttribute="bottom" constant="34" id="4gz-Vt-ayj"/>
+                            <constraint firstItem="Yoh-3j-Piz" firstAttribute="top" secondItem="Gxk-NB-pCc" secondAttribute="bottom" constant="23" id="8TJ-WR-CaX"/>
+                            <constraint firstItem="6O9-Df-0bs" firstAttribute="top" secondItem="DwW-JC-Prp" secondAttribute="bottom" constant="8" symbolic="YES" id="Dvq-JJ-i71"/>
+                            <constraint firstItem="Au7-0D-vHl" firstAttribute="centerX" secondItem="6O9-Df-0bs" secondAttribute="centerX" id="Og2-KF-fkG"/>
+                            <constraint firstItem="6O9-Df-0bs" firstAttribute="top" secondItem="021-Rq-OwA" secondAttribute="bottom" constant="79" id="P8w-Cs-R6o"/>
+                            <constraint firstItem="DwW-JC-Prp" firstAttribute="leading" secondItem="021-Rq-OwA" secondAttribute="leading" id="PaY-w4-GsQ"/>
+                            <constraint firstItem="Ly9-Rv-MPd" firstAttribute="centerX" secondItem="sum-AP-NAo" secondAttribute="centerX" id="X6g-ah-6Gb"/>
+                            <constraint firstItem="Gxk-NB-pCc" firstAttribute="centerY" secondItem="sum-AP-NAo" secondAttribute="centerY" constant="129.5" id="Y2m-19-gRp"/>
+                            <constraint firstItem="021-Rq-OwA" firstAttribute="leading" secondItem="sum-AP-NAo" secondAttribute="leadingMargin" constant="-19" id="Z1Q-cb-W06"/>
+                            <constraint firstItem="Au7-0D-vHl" firstAttribute="centerX" secondItem="Ly9-Rv-MPd" secondAttribute="centerX" id="dia-Nr-wM5"/>
+                            <constraint firstItem="Gxk-NB-pCc" firstAttribute="centerX" secondItem="Ly9-Rv-MPd" secondAttribute="centerX" id="gQi-sE-N95"/>
+                            <constraint firstItem="Au7-0D-vHl" firstAttribute="leading" secondItem="sum-AP-NAo" secondAttribute="leadingMargin" constant="69" id="iVO-UA-HGY"/>
+                            <constraint firstItem="Ly9-Rv-MPd" firstAttribute="centerY" secondItem="sum-AP-NAo" secondAttribute="centerY" constant="58.5" id="lF2-se-dOZ"/>
+                            <constraint firstItem="6O9-Df-0bs" firstAttribute="centerY" secondItem="sum-AP-NAo" secondAttribute="centerY" constant="-73.5" id="sWu-Qo-Luw"/>
+                            <constraint firstItem="Au7-0D-vHl" firstAttribute="centerY" secondItem="sum-AP-NAo" secondAttribute="centerY" constant="-7.5" id="x3h-0p-tBw"/>
+                            <constraint firstItem="021-Rq-OwA" firstAttribute="top" secondItem="69n-3G-wXd" secondAttribute="bottom" id="xqQ-re-bD8"/>
+                            <constraint firstItem="Au7-0D-vHl" firstAttribute="top" secondItem="6O9-Df-0bs" secondAttribute="bottom" constant="13" id="yU5-Oq-HyJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yoh-3j-Piz" secondAttribute="trailing" constant="4" id="z30-r5-dZK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="igh-jo-PzJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFr-XN-E3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="1014"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hM5-XS-PQE">
+            <objects>
+                <viewController id="SY1-fk-LtA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nm1-Oi-3aA"/>
+                        <viewControllerLayoutGuide type="bottom" id="SQT-fB-V0n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p7J-dM-sD7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salatzary Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgH-Rz-iLn">
+                                <rect key="frame" x="0.0" y="64" width="320" height="41"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona los ingredientes..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHG-E2-XvC">
+                                <rect key="frame" x="0.0" y="99" width="320" height="78"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OY-zF-mcF">
+                                <rect key="frame" x="4" y="251" width="142" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Pepperoni">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycR-Ja-BgH">
+                                <rect key="frame" x="29" y="185" width="91" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Jamon">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1K-r7-KFD">
+                                <rect key="frame" x="13" y="388" width="125" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Salchicha">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qx4-AD-1tJ">
+                                <rect key="frame" x="175" y="251" width="142" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Cebolla">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7i-Ys-MHv">
+                                <rect key="frame" x="187" y="317" width="119" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Pimiento">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkW-El-GzX">
+                                <rect key="frame" x="187" y="185" width="118" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Aceituna">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbP-Lj-Xfi">
+                                <rect key="frame" x="218" y="388" width="57" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Piña">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOT-Jj-I9y">
+                                <rect key="frame" x="36" y="463" width="81" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Todos">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8Ey-eC-g2g" kind="push" id="Xxq-Dq-chM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPb-Yp-soo">
+                                <rect key="frame" x="181" y="463" width="119" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Siguente">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8Ey-eC-g2g" kind="push" id="bHT-09-r7Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8d-mE-JyT">
+                                <rect key="frame" x="23" y="317" width="106" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Pavo">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7OY-zF-mcF" firstAttribute="centerX" secondItem="e1K-r7-KFD" secondAttribute="centerX" id="1ck-8g-rVE"/>
+                            <constraint firstItem="7OY-zF-mcF" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="-16" id="1ev-Dz-lE7"/>
+                            <constraint firstItem="c8d-mE-JyT" firstAttribute="centerY" secondItem="p7J-dM-sD7" secondAttribute="centerY" constant="59.5" id="2A3-M9-GXH"/>
+                            <constraint firstItem="7OY-zF-mcF" firstAttribute="centerY" secondItem="p7J-dM-sD7" secondAttribute="centerY" constant="-6.5" id="2xP-bn-UJ3"/>
+                            <constraint firstItem="e1K-r7-KFD" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="-7" id="4ba-lJ-y3Y"/>
+                            <constraint firstItem="c8d-mE-JyT" firstAttribute="centerX" secondItem="e1K-r7-KFD" secondAttribute="centerX" id="4pI-3U-uLg"/>
+                            <constraint firstItem="Qx4-AD-1tJ" firstAttribute="leading" secondItem="7OY-zF-mcF" secondAttribute="trailing" constant="29" id="5vd-gD-a5Q"/>
+                            <constraint firstItem="e1K-r7-KFD" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="-7" id="9xX-KW-NM6"/>
+                            <constraint firstItem="7OY-zF-mcF" firstAttribute="height" secondItem="ycR-Ja-BgH" secondAttribute="height" id="AdS-M6-aYp"/>
+                            <constraint firstItem="ycR-Ja-BgH" firstAttribute="top" secondItem="lkW-El-GzX" secondAttribute="top" id="AiL-kC-Oyx"/>
+                            <constraint firstItem="c8d-mE-JyT" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="3" id="DE6-mT-Gce"/>
+                            <constraint firstItem="lkW-El-GzX" firstAttribute="leading" secondItem="k7i-Ys-MHv" secondAttribute="leading" id="E0l-zu-sEt"/>
+                            <constraint firstItem="c8d-mE-JyT" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="3" id="E2q-gS-rVD"/>
+                            <constraint firstItem="c8d-mE-JyT" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="3" id="EJc-TX-Xd7"/>
+                            <constraint firstItem="7OY-zF-mcF" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="-16" id="ERM-Ym-gaw"/>
+                            <constraint firstItem="7OY-zF-mcF" firstAttribute="top" secondItem="ycR-Ja-BgH" secondAttribute="bottom" constant="13" id="Et5-hL-xmg"/>
+                            <constraint firstItem="7OY-zF-mcF" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="-16" id="Ets-6n-sNX"/>
+                            <constraint firstAttribute="trailing" secondItem="FgH-Rz-iLn" secondAttribute="trailing" id="IoW-6z-F1S"/>
+                            <constraint firstItem="tHG-E2-XvC" firstAttribute="top" secondItem="Nm1-Oi-3aA" secondAttribute="bottom" constant="35" id="JYs-a2-NQl"/>
+                            <constraint firstItem="MbP-Lj-Xfi" firstAttribute="leading" secondItem="e1K-r7-KFD" secondAttribute="trailing" constant="80" id="Kch-0J-Lcu"/>
+                            <constraint firstItem="c8d-mE-JyT" firstAttribute="height" secondItem="ycR-Ja-BgH" secondAttribute="height" id="N87-sY-VTt"/>
+                            <constraint firstItem="kOT-Jj-I9y" firstAttribute="centerY" secondItem="p7J-dM-sD7" secondAttribute="centerY" constant="205.5" id="Ohy-oc-ZI9"/>
+                            <constraint firstItem="k7i-Ys-MHv" firstAttribute="centerY" secondItem="p7J-dM-sD7" secondAttribute="centerY" constant="59.5" id="P2D-e1-koV"/>
+                            <constraint firstItem="e1K-r7-KFD" firstAttribute="centerY" secondItem="p7J-dM-sD7" secondAttribute="centerY" constant="130.5" id="PkE-EU-081"/>
+                            <constraint firstItem="tHG-E2-XvC" firstAttribute="trailing" secondItem="FgH-Rz-iLn" secondAttribute="trailing" id="TMF-v6-n4W"/>
+                            <constraint firstItem="lkW-El-GzX" firstAttribute="leading" secondItem="ycR-Ja-BgH" secondAttribute="trailing" constant="67" id="Tbz-Tk-6WU"/>
+                            <constraint firstItem="e1K-r7-KFD" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="-7" id="U2f-sr-dzM"/>
+                            <constraint firstItem="lkW-El-GzX" firstAttribute="centerY" secondItem="p7J-dM-sD7" secondAttribute="centerY" constant="-72.5" id="UxM-ga-CbJ"/>
+                            <constraint firstItem="VPb-Yp-soo" firstAttribute="leading" secondItem="kOT-Jj-I9y" secondAttribute="trailing" constant="64" id="VgM-Xd-9kN"/>
+                            <constraint firstItem="lkW-El-GzX" firstAttribute="centerX" secondItem="Qx4-AD-1tJ" secondAttribute="centerX" id="XDh-SJ-W21"/>
+                            <constraint firstItem="ycR-Ja-BgH" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="9" id="aeU-IX-7Eu"/>
+                            <constraint firstItem="e1K-r7-KFD" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="-7" id="bJl-SY-Ydv"/>
+                            <constraint firstItem="FgH-Rz-iLn" firstAttribute="leading" secondItem="tHG-E2-XvC" secondAttribute="leading" id="dMS-U7-F9b"/>
+                            <constraint firstItem="Qx4-AD-1tJ" firstAttribute="centerY" secondItem="p7J-dM-sD7" secondAttribute="centerY" constant="-6.5" id="f8X-M6-XD9"/>
+                            <constraint firstItem="7OY-zF-mcF" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="-16" id="fam-gA-TgC"/>
+                            <constraint firstItem="ycR-Ja-BgH" firstAttribute="top" secondItem="tHG-E2-XvC" secondAttribute="bottom" constant="8" symbolic="YES" id="gMQ-Ec-oJG"/>
+                            <constraint firstItem="e1K-r7-KFD" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="-7" id="hAU-gs-tQG"/>
+                            <constraint firstItem="k7i-Ys-MHv" firstAttribute="centerX" secondItem="MbP-Lj-Xfi" secondAttribute="centerX" id="hFZ-Wz-1G6"/>
+                            <constraint firstItem="FgH-Rz-iLn" firstAttribute="top" secondItem="Nm1-Oi-3aA" secondAttribute="bottom" id="hLo-Ao-1KQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MbP-Lj-Xfi" secondAttribute="trailing" constant="25" id="hcY-OR-h8o"/>
+                            <constraint firstItem="kOT-Jj-I9y" firstAttribute="centerX" secondItem="tHG-E2-XvC" secondAttribute="centerX" constant="-83.5" id="k1v-xl-eqd"/>
+                            <constraint firstItem="MbP-Lj-Xfi" firstAttribute="centerY" secondItem="p7J-dM-sD7" secondAttribute="centerY" constant="130.5" id="lhf-hS-XnJ"/>
+                            <constraint firstItem="tHG-E2-XvC" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leading" id="m1k-A3-4Ay"/>
+                            <constraint firstItem="MbP-Lj-Xfi" firstAttribute="leading" secondItem="e1K-r7-KFD" secondAttribute="trailing" constant="80" id="n4e-FN-lbq"/>
+                            <constraint firstItem="lkW-El-GzX" firstAttribute="top" secondItem="FgH-Rz-iLn" secondAttribute="bottom" constant="80" id="n9U-PE-2Pw"/>
+                            <constraint firstItem="ycR-Ja-BgH" firstAttribute="centerY" secondItem="p7J-dM-sD7" secondAttribute="centerY" constant="-72.5" id="tPv-hH-iSt"/>
+                            <constraint firstItem="e1K-r7-KFD" firstAttribute="height" secondItem="ycR-Ja-BgH" secondAttribute="height" id="x24-Tu-6Ai"/>
+                            <constraint firstItem="ycR-Ja-BgH" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="9" id="xdB-YB-AeY"/>
+                            <constraint firstItem="e1K-r7-KFD" firstAttribute="leading" secondItem="p7J-dM-sD7" secondAttribute="leadingMargin" constant="-7" id="yxQ-JV-hUO"/>
+                            <constraint firstItem="VPb-Yp-soo" firstAttribute="baseline" secondItem="kOT-Jj-I9y" secondAttribute="baseline" id="yzH-pX-n0P"/>
+                            <constraint firstItem="7OY-zF-mcF" firstAttribute="centerX" secondItem="ycR-Ja-BgH" secondAttribute="centerX" id="zKT-L6-aNQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kqa-9i-fc1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7n-3N-mSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="298"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hnm-ZO-IkO">
+            <objects>
+                <viewController id="8Ey-eC-g2g" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="og1-wb-8hx"/>
+                        <viewControllerLayoutGuide type="bottom" id="l4U-G7-QGa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xax-3C-FGo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salatzary Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lT-co-JDT">
+                                <rect key="frame" x="0.0" y="64" width="320" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="JCU-Dw-8Vu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AY9-JI-UEt">
+                                <rect key="frame" x="72" y="471" width="177" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="CONFIRMAR">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3Df-68-UlZ" kind="modal" id="Xua-SC-jwW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirma tu orden..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqt-G8-1UL">
+                                <rect key="frame" x="0.0" y="100" width="320" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="LIN-gq-Jar"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pizza..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1am-0R-1Gw">
+                                <rect key="frame" x="0.0" y="171" width="320" height="284"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="jhZ-q1-pCZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zqt-G8-1UL" secondAttribute="trailing" id="E99-U2-a5H"/>
+                            <constraint firstItem="zqt-G8-1UL" firstAttribute="leading" secondItem="8lT-co-JDT" secondAttribute="leading" id="EnS-ms-Eq2"/>
+                            <constraint firstItem="8lT-co-JDT" firstAttribute="top" secondItem="og1-wb-8hx" secondAttribute="bottom" id="Rlx-Zu-GQh"/>
+                            <constraint firstItem="zqt-G8-1UL" firstAttribute="top" secondItem="og1-wb-8hx" secondAttribute="bottom" constant="36" id="Seq-vo-AF0"/>
+                            <constraint firstItem="AY9-JI-UEt" firstAttribute="centerY" secondItem="xax-3C-FGo" secondAttribute="centerY" constant="213.5" id="ibG-Jo-7sE"/>
+                            <constraint firstItem="zqt-G8-1UL" firstAttribute="centerX" secondItem="AY9-JI-UEt" secondAttribute="centerX" id="jxt-Bo-qiC"/>
+                            <constraint firstItem="8lT-co-JDT" firstAttribute="trailing" secondItem="zqt-G8-1UL" secondAttribute="trailing" id="pqQ-Sx-K1A"/>
+                            <constraint firstItem="8lT-co-JDT" firstAttribute="leading" secondItem="xax-3C-FGo" secondAttribute="leading" id="xPu-lW-dSw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="I2A-MD-TnV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3v-cd-dFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442" y="298"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sFj-WC-19h">
+            <objects>
+                <viewController id="3Df-68-UlZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZYk-Md-dtu"/>
+                        <viewControllerLayoutGuide type="bottom" id="LQt-j2-Eqi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gKM-TQ-Epo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salatzary Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPF-f0-f35">
+                                <rect key="frame" x="0.0" y="62" width="320" height="41"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yag-WG-eaG">
+                                <rect key="frame" x="139" y="310" width="44" height="53"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tmJ-ph-2pY">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="53"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCf-eD-AjS">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="53"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                <state key="normal" title="OK">
+                                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pedido completo! En unos minutos tu pizza estará lista GRACIAS POR TU PREFERENCIA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMt-8t-EVG">
+                                <rect key="frame" x="0.0" y="111" width="320" height="144"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LQt-j2-Eqi" firstAttribute="top" secondItem="gPF-f0-f35" secondAttribute="bottom" constant="465" id="6h1-8G-qyZ"/>
+                            <constraint firstItem="cMt-8t-EVG" firstAttribute="trailing" secondItem="gPF-f0-f35" secondAttribute="trailing" id="KVP-Gj-PQQ"/>
+                            <constraint firstItem="cMt-8t-EVG" firstAttribute="leading" secondItem="gPF-f0-f35" secondAttribute="leading" id="Mfh-5U-seT"/>
+                            <constraint firstItem="cMt-8t-EVG" firstAttribute="leading" secondItem="gKM-TQ-Epo" secondAttribute="leading" id="Wb2-20-fK3"/>
+                            <constraint firstAttribute="trailing" secondItem="cMt-8t-EVG" secondAttribute="trailing" id="fXY-q0-FDl"/>
+                            <constraint firstItem="cMt-8t-EVG" firstAttribute="top" secondItem="ZYk-Md-dtu" secondAttribute="bottom" constant="91" id="hAY-Ja-1x9"/>
+                            <constraint firstItem="LQt-j2-Eqi" firstAttribute="top" secondItem="cMt-8t-EVG" secondAttribute="bottom" constant="313" id="lkJ-Vw-Ltg"/>
+                            <constraint firstItem="yag-WG-eaG" firstAttribute="top" secondItem="cMt-8t-EVG" secondAttribute="bottom" constant="55" id="rdc-wY-wod"/>
+                            <constraint firstItem="gPF-f0-f35" firstAttribute="top" secondItem="ZYk-Md-dtu" secondAttribute="bottom" constant="42" id="u7f-HI-Q0c"/>
+                            <constraint firstItem="yag-WG-eaG" firstAttribute="leading" secondItem="gKM-TQ-Epo" secondAttribute="leading" constant="139" id="xKa-qG-LVE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gUu-nN-Vgf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="su1-Rb-lcd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442" y="1014"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8yZ-4b-msq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kl7-K9-LeG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pxb-PR-H4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1rL-QX-NUk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWn-GK-fmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="298"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="SXb-FN-5df"/>
+        <segue reference="zRg-bu-oIa"/>
+        <segue reference="kty-7f-oa1"/>
+        <segue reference="bHT-09-r7Z"/>
+    </inferredMetricsTieBreakers>
+</document>
