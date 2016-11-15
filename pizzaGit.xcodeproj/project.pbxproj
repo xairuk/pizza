@@ -194,15 +194,18 @@
 					A67E60931C93DE38002B3950 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = LDP2BZXQ38;
+						LastSwiftMigration = 0810;
 					};
 					A67E60A71C93DE39002B3950 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = LDP2BZXQ38;
+						LastSwiftMigration = 0810;
 						TestTargetID = A67E60931C93DE38002B3950;
 					};
 					A67E60B21C93DE39002B3950 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = LDP2BZXQ38;
+						LastSwiftMigration = 0810;
 						TestTargetID = A67E60931C93DE38002B3950;
 					};
 				};
@@ -404,6 +407,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xairuk.pizzaGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -415,6 +419,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xairuk.pizzaGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -426,6 +431,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xairuk.pizzaGitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pizzaGit.app/pizzaGit";
 			};
 			name = Debug;
@@ -438,6 +444,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xairuk.pizzaGitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pizzaGit.app/pizzaGit";
 			};
 			name = Release;
@@ -449,6 +456,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xairuk.pizzaGitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = pizzaGit;
 				USES_XCTRUNNER = YES;
 			};
@@ -461,6 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xairuk.pizzaGitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = pizzaGit;
 				USES_XCTRUNNER = YES;
 			};
@@ -485,6 +494,7 @@
 				A67E60BE1C93DE39002B3950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A67E60BF1C93DE39002B3950 /* Build configuration list for PBXNativeTarget "pizzaGitTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +503,7 @@
 				A67E60C11C93DE39002B3950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A67E60C21C93DE39002B3950 /* Build configuration list for PBXNativeTarget "pizzaGitUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +512,7 @@
 				A67E60C41C93DE39002B3950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
